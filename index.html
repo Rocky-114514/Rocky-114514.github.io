@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的网站</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>首页</h2>
+            <p>这是首页的内容。</p>
+        </section>
+        <section id="about">
+            <h2>关于我们</h2>
+			<form action="http://localhost:8888/user/register" method="POST">
+			    <label for="name">Name:</label>
+			    <input type="text" id="username" name="username"><br><br>
+			    <label for="email">Email:</label>
+			    <input type="text" id="password" name="password"><br><br>
+			    <input type="submit" value="Submit">
+			</form>
+        </section>
+        <section id="contact">
+            <h2>联系我们</h2>
+            <p>这是联系我们页面的内容。</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 我的网站. 保留所有权利。</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
