@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <title>注册页面</title>
+    <style>
+        /* 添加简单的样式，改善用户体验 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+    <script>
+        // 简单的前端验证
+        function validateForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (!username || !password) {
+                alert("用户名和密码不能为空！");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>注册</h1>
+        <form id="postForm" action="https://120.233.26.237:51185/user/register" method="POST"
+            onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="请输入用户名" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="请输入密码" required>
+            </div>
+            <input type="submit" value="注册">
+        </form>
+    </div>
+</body>
+
+</html>

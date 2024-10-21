@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>登录页面</title>
+	<script>
+		function validateForm() {
+			const username = document.getElementById("username").value;
+			const password = document.getElementById("password").value;
+			if (!username || !password) {
+				alert("用户名和密码不能为空！");
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+
+<body>
+	<div>
+		<h1>登录</h1>
+		<form id="postForm" action="https://120.233.26.237:51185/user/login" method="POST"
+			onsubmit="return validateForm()">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" placeholder="请输入用户名" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" placeholder="请输入密码" required>
+			<input type="submit" value="登录">
+		</form>
+	</div>
+</body>
+
+</html>

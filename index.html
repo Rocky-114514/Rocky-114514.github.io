@@ -4,45 +4,26 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>我的网站</title>
-		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/css/indexstyle.css">
 	</head>
 	<body>
-		<header>
+		<div class="top0">
 			<h1>欢迎来到我的网站</h1>
-			<nav>
-				<ul>
-					<li><a href="#home">首页</a></li>
-					<li><a href="#about">关于我们</a></li>
-					<li><a href="#contact">联系我们</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<section id="home">
-				<h2>首页</h2>
-				<p>这是首页的内容。</p>
-			</section>
-			<section id="about">
-				<h2>关于我们</h2>
-				<form id="postForm" action="https://120.233.26.237:51185/user/register" method="POST">
-					<label for="name">Name:</label>
-					<input type="text" id="username" name="username"><br><br>
-					<label for="password">Password:</label>
-					<input type="text" id="password" name="password"><br><br>
-					<input type="submit" value="Submit">
-				</form>
-
-				<script>
-				</script>
-			</section>
-			<section id="contact">
-				<h2>联系我们</h2>
-				<p>这是联系我们页面的内容。</p>
-			</section>
-		</main>
-		<footer>
-			<p>&copy; 2023 我的网站. 保留所有权利。</p>
-		</footer>
-		<script src="/js/scripts.js"></script>
+			<p>这个网站是我用于测试的网站，尚未对外发布，如果您不小心进入这个网站，请不要输入任何有关您的敏感信息。</p>
+		</div>
+		<div>
+			<ul class="daohang">
+				<li><a href="#">首页</a></li>
+			</ul>
+			<ul class="login">
+				<li><a href="login.html">登录</a></li>
+				<li><a href="register.html">注册</a></li>
+			</ul>
+		</div>
+		<div>
+			<h2>此网站仅用于个人测试，请勿使用其中的任何元素。</h2>
+		</div>
+	
+	
 	</body>
 </html>
